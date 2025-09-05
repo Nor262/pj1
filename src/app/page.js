@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
+      <main className={styles.main}> 
         <Image
           className={styles.logo}
           src="/next.svg"
@@ -15,7 +15,7 @@ export default function Home() {
         />
         <ol>
           <li>
-            Skibidi
+            code --install-extension Equinusocio.vsc-material-theme
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
