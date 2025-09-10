@@ -19,5 +19,17 @@ export default function Camera() {
     }
   }, []);
 
-  return <video style={{border: '2px solid red', width: '80%', height: '500px'}} id="camera" autoPlay />;
+return (
+    <video
+        id="camera"
+        autoPlay
+        style={{
+            border: '2px solid red',
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            maxHeight: '500px'
+        }}
+    />
+);
 }
