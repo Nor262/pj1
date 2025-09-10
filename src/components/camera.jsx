@@ -20,18 +20,24 @@ export default function Camera() {
   }, []);
 
 return (
-    <div style={{ width: '100%', height: '500px', position: 'relative', overflow: 'hidden' }}>
-        <video
-            id="camera"
-            autoPlay
-            style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'contain',
-                border: '2px solid red',
-                background: 'black'
-            }}
-        />
-    </div>
+  <div style={{
+    marginTop: '500px',
+    width: '500px',
+    height: '500px',
+    position: 'relative',
+    overflow: 'hidden',
+    border: '2px solid #333',
+  }}>
+    <video
+      id="camera"
+      autoPlay
+      style={{
+        width: '100%',
+        height: '100%',
+        objectFit: 'contain', // Giữ đúng tỷ lệ gốc của camera
+        background: 'black',
+      }}
+    />
+  </div>
 );
 }
