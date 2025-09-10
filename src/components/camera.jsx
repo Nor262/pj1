@@ -20,16 +20,18 @@ export default function Camera() {
   }, []);
 
 return (
-    <video
-        id="camera"
-        autoPlay
-        style={{
-            border: '2px solid red',
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            maxHeight: '500px'
-        }}
-    />
+    <div style={{ width: '100%', height: '500px', position: 'relative', overflow: 'hidden' }}>
+        <video
+            id="camera"
+            autoPlay
+            style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'contain',
+                border: '2px solid red',
+                background: 'black'
+            }}
+        />
+    </div>
 );
 }
